@@ -1,3 +1,5 @@
+import { EmailIcon } from "@chakra-ui/icons";
+import { Flex, Heading } from "@chakra-ui/layout";
 import Link from "next/link";
 
 export default function forgot() {
@@ -8,6 +10,12 @@ export default function forgot() {
           className="flex flex-col bg-white rounded shadow-lg p-16 mt-12"
           action=""
         >
+          <div>
+            <Flex direction="column" align="center">
+              <EmailIcon fontSize={40} />
+              <Heading>Forgot Password?</Heading>
+            </Flex>
+          </div>
           <input
             className="flex items-center h-12 px-4 w-64 border mt-2 rounded focus:outline-none focus:ring-2"
             placeholder="Enter Email"
