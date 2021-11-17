@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import DarkModeSwitch from "../components/DarkModeSwitch";
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
 
         <div className="w-1/2 flex justify-center mt-16">
           <div className="w-full max-w-xl py-3">
+            <div className="flex justify-end">
+              <DarkModeSwitch />
+            </div>
             <div className="flex justify-center pb-3">
               <Image src="/logo.png" alt="logo" width={250} height={60} />
             </div>
