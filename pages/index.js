@@ -73,9 +73,11 @@ export default function Home() {
                     Don&apos;t have an account? Sign Up
                   </p>
                 </Link>
-                <p className="text-center text-xs mt-1 text-gray-500">
-                  Forgot Password?
-                </p>
+                <Link href="/forgot" passHref={true}>
+                  <p className="text-center text-xs mt-1 text-gray-500 hover:text-purple-700 cursor-pointer">
+                    Forgot Password?
+                  </p>
+                </Link>
               </div>
             </form>
             <p className="text-center text-gray-300 text-sm pt-3">
