@@ -13,8 +13,8 @@ export default function signUp() {
         />
         {/* <div className="relative z-1">my content</div> */}
 
-        <div className="relative z-1 ml-48 flex items-center h-screen w-1/2">
-          <div className="w-1/2 bg-white rounded shadow-2xl p-8 m-4">
+        <div className="relative z-1 sm:ml-16 md:ml-48 flex items-center h-screen w-1/2">
+          <div className="lg:w-1/2 bg-white rounded shadow-2xl p-8 m-4">
             <h1 className="block w-full text-center text-gray-800 text-2xl font-bold mb-6">
               Register
             </h1>
