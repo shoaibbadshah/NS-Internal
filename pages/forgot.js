@@ -8,11 +8,11 @@ export default function forgot() {
     <div className="relative">
       <Image
         layout="fill"
-        className="object-center object-cover pointer-events-none"
+        className="object-center opacity-40 object-cover pointer-events-none"
         src="/tree.jpg"
         alt="bg"
       />
-      <div className="flex flex-col relative z-1 pt-14 items-center w-screen h-screen bg-gray-200 text-gray-700">
+      <div className="flex flex-col relative z-1 drop-shadow-3xl pt-14 items-center w-screen h-screen text-gray-700">
         <form
           className="flex flex-col bg-white rounded shadow-lg p-16 mt-12"
           action=""
@@ -46,7 +46,6 @@ export default function forgot() {
             </Link>
           </Flex>
         </form>
-      </div>
       </div>
     </div>
   );
