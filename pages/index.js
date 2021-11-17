@@ -1,6 +1,8 @@
+import { Box, Flex } from "@chakra-ui/layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import DarkModeSwitch from "../components/DarkModeSwitch";
 
 export default function Home() {
   return (
@@ -12,7 +14,7 @@ export default function Home() {
       </Head>
 
       <div className="flex">
-        <div className="w-1/2 h-screen">
+        <div className="w-1/2 hidden lg:block md:h-full">
           <Image
             src="/login.jpg"
             alt="image"
@@ -23,12 +25,15 @@ export default function Home() {
           />
         </div>
 
-        <div className="w-1/2 flex justify-center mt-16">
-          <div className="w-full max-w-xl py-3">
+        <div className="flex justify-center lg:w-1/2 mt-0 xl:mt-16 m-auto">
+          <div className="w-full md:max-w-xl py-3">
+            <div className="flex justify-end">
+              <DarkModeSwitch />
+            </div>
             <div className="flex justify-center pb-3">
               <Image src="/logo.png" alt="logo" width={250} height={60} />
             </div>
-            <form className="bg-white shadow-lg rounded px-36 pt-6 pb-8 mb-4 border-t">
+            <form className="bg-white shadow-lg lg:mx-4 rounded px-8 md:px-36 pb-8 mb-4 border-t">
               <p className="text-center text-purple-900 pt-10 text-sm font-semibold">
                 SIGN IN
               </p>
