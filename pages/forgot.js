@@ -6,7 +6,7 @@ export default function forgot() {
           className="flex flex-col bg-white rounded shadow-lg p-12 mt-12"
           action=""
         >
-          <label className="font-semibold text-xs" for="usernameField">
+          <label className="font-semibold text-xs" htmlFor="usernameField">
             Email
           </label>
           <input
