@@ -11,7 +11,6 @@ export default function signUp() {
           src="/bg.jpg"
           alt="bg"
         />
-        {/* <div className="relative z-1">my content</div> */}
 
         <div className="relative z-1 sm:ml-16 md:ml-48 flex items-center h-screen w-1/2">
           <div className="lg:w-1/2 bg-white rounded shadow-2xl p-8 m-4">
